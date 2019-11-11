@@ -1,0 +1,14 @@
+<h4>Login</h4>
+
+<form (submit)="loginUser($event)">
+  <input type="text" placeholder="Username" id="username">
+  <input type="password" placeholder="Password" id="password"> {{validationMessage}}
+  <input type="submit" placeholder="Submit">
+</form>
+
+<br>
+
+<a routerLink="/">Home Page</a>
+<br><br>
+<a routerLink="/admin">Admin Page</a>
+
