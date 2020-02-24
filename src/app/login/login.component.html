@@ -2,7 +2,8 @@
 
 <form (submit)="loginUser($event)">
   <input type="text" placeholder="Username" id="username">
-  <input type="password" placeholder="Password" id="password"> {{validationMessage}}
+  <input type="password" placeholder="Password" id="password"> {{usernameMessage}}
+  {{passwordMessage}}
   <input type="submit" placeholder="Submit">
 </form>
 

@@ -1,29 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { LoginComponent } from './login/login.component';
-import { AdminComponent } from './admin/admin.component';
-import { HomeComponent } from './home/home.component';
-import { RouterModule } from '@angular/router';
+
 import { AuthenticateService } from './authenticate.service';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    AdminComponent,
-    HomeComponent
+    routingComponents
   ],
   imports: [
     BrowserModule,
-    HttpClientModule,
-    RouterModule.forRoot([
-      {path: 'login', component: LoginComponent},
-      {path: 'admin', component: AdminComponent},
-      {path: '', component: HomeComponent}
-      ])
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [AuthenticateService],
   bootstrap: [AppComponent]

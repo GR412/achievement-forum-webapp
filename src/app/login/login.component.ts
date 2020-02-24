@@ -8,8 +8,10 @@ import { AuthenticateService } from '../authenticate.service';
 })
 export class LoginComponent implements OnInit {
   private validationMessage: string;
+  private usernameMessage: string;
+  private passwordMessage: string;
 
-  constructor(private Auth: AuthenticateService) { }
+  constructor(private auth: AuthenticateService) { }
 
   ngOnInit() {
   }
@@ -24,12 +26,18 @@ export class LoginComponent implements OnInit {
     const username = target.querySelector('#username').value;
     const password = target.querySelector('#password').value;
 
-    this.Auth.postUserDetails(username, password).subscribe(data => {
-        if (data.error) {
-          this.validationMessage = data.message;
-        } else {
-          this.validationMessage = data.message;
-        }
+    this.auth.postUserDetails(username, password).subscribe(data => {
+        // @ts-ignore
+      if (data.usernameError || data.passwordError) {
+        // @ts-ignore
+        this.usernameMessage = data.usernameMessage;
+        // @ts-ignore
+        this.passwordMessage = data.passwordMessage;
+      } else {
+        // @ts-ignore
+        this.usernameMessage = ' ';
+        this.passwordMessage = ' ';
+      }
       }
     );
   }
