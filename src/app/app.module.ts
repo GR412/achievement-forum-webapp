@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 import { AuthenticateService } from './authenticate.service';
 import { HttpClientModule } from '@angular/common/http';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    routingComponents
+    routingComponents,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
