@@ -1,0 +1,6 @@
+.header {
+  width: 100%;
+  display: inline-block;
+  border-bottom: 3px solid #C62828;
+  min-height: 50px;
+}

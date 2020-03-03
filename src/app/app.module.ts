@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 
 import { AuthenticateService } from './authenticate.service';
 import { HttpClientModule } from '@angular/common/http';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { HeaderComponent } from './components/header/header.component';
+import { TopNavComponent } from './components/top-nav/top-nav.component';
+import { SiteOptionsDropdownComponent } from './components/site-options-dropdown/site-options-dropdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    HeaderComponent,
+    TopNavComponent,
+    SiteOptionsDropdownComponent,
   ],
   imports: [
     BrowserModule,

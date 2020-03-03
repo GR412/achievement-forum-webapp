@@ -1,5 +1,5 @@
-import {Component, OnChanges, OnInit, SimpleChanges} from '@angular/core';
-import { AuthenticateService } from '../authenticate.service';
+import {Component, OnInit} from '@angular/core';
+import { AuthenticateService } from '../../authenticate.service';
 
 @Component({
   selector: 'app-login',
@@ -11,14 +11,11 @@ export class LoginComponent implements OnInit {
   private usernameMessage: string;
   private passwordMessage: string;
 
-  constructor(private auth: AuthenticateService) { }
+  constructor(private auth: AuthenticateService) {}
 
   ngOnInit() {
+
   }
-
-  /*ngOnChanges(changes: SimpleChanges): void {
-
-  }*/
 
   loginUser(event) {
     event.preventDefault();

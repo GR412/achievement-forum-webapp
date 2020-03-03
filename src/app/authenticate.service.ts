@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +9,7 @@ export class AuthenticateService {
 
   constructor(private http: HttpClient) { }
 
-  postUserDetails(username, password) {
+  postUserDetails(username, password): Observable<any> {
     return this.http.post('/api/achievement-forum-api/src/public/register',
       {username, password});
   }
