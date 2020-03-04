@@ -1,0 +1,11 @@
+nav {
+}
+
+nav a {
+  padding: 0px 25px 0px 25px;
+}
+
+nav a.active {
+  color: coral;
+}
+

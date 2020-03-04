@@ -1,6 +1,14 @@
-.header {
-  width: 100%;
-  display: inline-block;
-  border-bottom: 3px solid #C62828;
+header {
+  border-bottom: 2px solid #C62828;
+  background: #191919;
   min-height: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container, .nav-container, .search-container, .auth-buttons-container, img {
+  display: inline-block;
+  margin: 0 20px 0 20px;
 }
