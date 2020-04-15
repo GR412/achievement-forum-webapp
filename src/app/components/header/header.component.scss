@@ -1,4 +1,7 @@
-header {
+@import '../../../styles.scss';
+
+header
+{
   border-bottom: 2px solid #C62828;
   background: #191919;
   min-height: 50px;
@@ -8,42 +11,50 @@ header {
   align-items: center;
 }
 
-.logo-container, .nav-container, .search-container, .auth-buttons-container, img, button {
+.logo-container, .nav-container, .search-container, .auth-buttons-container, img, button
+{
   display: inline-block;
   margin: 0 20px 0 20px;
 }
 
-.search-bar {
+.search-bar
+{
   border: none;
-  background-color: var(--medium-grey);
+  background-color: colour($dark-theme-colours, medium-grey);
   border-radius: 5px 0 0 5px;
   height: 30px;
   width: 400px;
 }
 
-.search-button {
+.search-button
+{
   border-radius: 0 5px 5px 0;
-  background-color: #262626;
-  width: 35px;
+  background-color: colour($dark-theme-colours, darker-grey);
+  margin: 0;
 }
 
-.log-in-button {
-  background-color: var(--medium-grey);
+.log-in-button
+{
+  background-color: colour($dark-theme-colours, medium-grey );
 }
 
-.log-in-button:hover {
-  background-color: var(--lighter-grey);
+.log-in-button:hover
+{
+  background-color: colour($dark-theme-colours, lighter-grey );
 }
 
-.sign-up-button {
+.sign-up-button
+{
   margin-left: 20px;
-  background-color: var(--medium-blue);
+  background-color: colour($dark-theme-colours, medium-blue );
 }
 
-.sign-up-button:hover {
-  background-color: var(--darker-blue);
+.sign-up-button:hover
+{
+  background-color: colour($dark-theme-colours, darker-blue );
 }
 
-.site-options-button:hover {
-  background-color: var(--medium-grey);
+.site-options-button:hover
+{
+  background-color: colour($dark-theme-colours, medium-grey );
 }

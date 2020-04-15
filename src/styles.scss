@@ -1,28 +1,58 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-:root {
-  /*Colours*/
-  --lighter-blue: #1565C0;
-  --medium-blue: #0D47A1;
-  --darker-blue: #82B1FF;
-  --lighter-grey: #414141;
-  --medium-grey: #313131;
-  --darker-grey: #212121;
+/* ========================= COLOURS ========================= */
+
+$light-theme-colours:
+(
+  lighter-blue: #1565C0,
+  medium-blue: #0D47A1,
+  darker-blue: #82B1FF,
+  lighter-grey: #414141,
+  medium-grey: #313131,
+  darker-grey: #212121,
+  text-black: black
+);
+
+$dark-theme-colours:
+(
+  lighter-blue: #1565C0,
+  medium-blue: #0D47A1,
+  darker-blue: #82B1FF,
+  lighter-grey: #414141,
+  medium-grey: #313131,
+  darker-grey: #212121,
+  text-white: white
+);
+
+/* ========================= FUNCTIONS ========================= */
+
+// Simplifies the use of the light and dark theme SASS maps by returning a map_get call
+@function colour ($theme, $colour-name)
+{
+  @return map_get($theme, $colour-name);
 }
 
-body {
+body
+{
   overflow-y: scroll;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: white;
+h1, h2, h3, h4, h5, h6, p, ul, li
+{
+  margin: 20px 20px 2px 20px;
 }
 
-button {
+a
+{
+  text-decoration: none;
+  color: colour($dark-theme-colours, text-white)
+}
+
+button
+{
   padding: 7px 12px 7px 12px;
   border-radius: 5px;
   font-weight: bold;

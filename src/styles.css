@@ -1,14 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
-:root {
-  /*Colours*/
-  --lighter-blue: #1565C0;
-  --medium-blue: #0D47A1;
-  --darker-blue: #82B1FF;
-  --lighter-grey: #414141;
-  --medium-grey: #313131;
-  --darker-grey: #212121;
-}
-
 body {
   overflow-y: scroll;
   margin: 0;

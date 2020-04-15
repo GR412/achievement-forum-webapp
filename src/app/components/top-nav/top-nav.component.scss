@@ -1,0 +1,23 @@
+@import '../../../styles.scss';
+
+nav
+{
+
+}
+
+nav a
+{
+  padding: 0 25px 0 25px;
+}
+
+nav a:hover
+{
+  color: colour($dark-theme-colours, medium-blue );
+}
+
+nav a.active
+{
+  color: colour($dark-theme-colours, medium-blue );
+  border-bottom: colour($dark-theme-colours, medium-blue );
+}
+

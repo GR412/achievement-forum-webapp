@@ -1,3 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* ========================= COLOURS ========================= */
+/* ========================= FUNCTIONS ========================= */
+body {
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 20px 20px 2px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  padding: 7px 12px 7px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
 header {
   border-bottom: 2px solid #C62828;
   background: #191919;
@@ -15,7 +42,7 @@ header {
 
 .search-bar {
   border: none;
-  background-color: var(--medium-grey);
+  background-color: #313131;
   border-radius: 5px 0 0 5px;
   height: 30px;
   width: 400px;
@@ -23,29 +50,29 @@ header {
 
 .search-button {
   border-radius: 0 5px 5px 0;
-  background-color: #262626;
-  width: 35px;
+  background-color: #212121;
+  margin: 0;
 }
 
 .log-in-button {
-  background-color: var(--medium-grey);
+  background-color: #313131;
 }
 
 .log-in-button:hover {
-  background-color: var(--lighter-grey);
+  background-color: #414141;
 }
 
 .sign-up-button {
   margin-left: 20px;
-  background-color: var(--medium-blue);
+  background-color: #0D47A1;
 }
 
 .sign-up-button:hover {
-  background-color: var(--darker-blue);
+  background-color: #82B1FF;
 }
 
 .site-options-button:hover {
-  background-color: var(--medium-grey);
+  background-color: #313131;
 }
 
 /*# sourceMappingURL=header.component.css.map */

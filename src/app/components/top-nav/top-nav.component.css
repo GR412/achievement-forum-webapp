@@ -1,4 +1,28 @@
-nav {
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* ========================= COLOURS ========================= */
+/* ========================= FUNCTIONS ========================= */
+body {
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li {
+  margin: 20px 20px 2px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  padding: 7px 12px 7px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
 }
 
 nav a {
@@ -6,11 +30,12 @@ nav a {
 }
 
 nav a:hover {
-  color: var(--medium-blue);
+  color: #0D47A1;
 }
 
 nav a.active {
-  color: var(--medium-blue);
-  border-bottom: 2px solid var(--medium-blue);
+  color: #0D47A1;
+  border-bottom: #0D47A1;
 }
 
+/*# sourceMappingURL=top-nav.component.css.map */
