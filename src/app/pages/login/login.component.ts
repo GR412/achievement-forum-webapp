@@ -7,9 +7,9 @@ import { AuthenticateService } from '../../authenticate.service';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  private validationMessage: string;
-  private usernameMessage: string;
-  private passwordMessage: string;
+  public validationMessage: string;
+  public usernameMessage: string;
+  public passwordMessage: string;
 
   constructor(private auth: AuthenticateService) {}
 

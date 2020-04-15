@@ -2,10 +2,15 @@ nav {
 }
 
 nav a {
-  padding: 0px 25px 0px 25px;
+  padding: 0 25px 0 25px;
+}
+
+nav a:hover {
+  color: var(--medium-blue);
 }
 
 nav a.active {
-  color: coral;
+  color: var(--medium-blue);
+  border-bottom: 2px solid var(--medium-blue);
 }
 
