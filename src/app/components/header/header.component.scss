@@ -2,13 +2,13 @@
 
 header
 {
-  border-bottom: 2px solid #C62828;
-  background: #191919;
+  box-shadow: 0 1px 2px 0 lightgrey;
   min-height: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  background: white;
 }
 
 .logo-container, .nav-container, .search-container, .auth-buttons-container, img, button
@@ -20,41 +20,57 @@ header
 .search-bar
 {
   border: none;
-  background-color: colour($dark-theme-colours, medium-grey);
+  background-color: colour($light-theme-colours, medium-grey);
   border-radius: 5px 0 0 5px;
+  padding: 0 10px 0 10px;
   height: 30px;
   width: 400px;
+}
+
+.search-bar:focus
+{
+  border: 2px solid colour($light-theme-colours, medium-blue);
 }
 
 .search-button
 {
   border-radius: 0 5px 5px 0;
-  background-color: colour($dark-theme-colours, darker-grey);
+  background-color: colour($light-theme-colours, dark-grey);
   margin: 0;
+}
+
+.search-button:hover
+{
+  background-color: colour($light-theme-colours, darker-grey);
 }
 
 .log-in-button
 {
-  background-color: colour($dark-theme-colours, medium-grey );
+  background-color: colour($light-theme-colours, medium-grey);
 }
 
 .log-in-button:hover
 {
-  background-color: colour($dark-theme-colours, lighter-grey );
+  background-color: colour($light-theme-colours, dark-grey);
 }
 
 .sign-up-button
 {
   margin-left: 20px;
-  background-color: colour($dark-theme-colours, medium-blue );
+  background-color: colour($light-theme-colours, medium-blue);
 }
 
 .sign-up-button:hover
 {
-  background-color: colour($dark-theme-colours, darker-blue );
+  background-color: colour($light-theme-colours, lighter-blue);
+}
+
+.site-options-button
+{
+  background-color: transparent;
 }
 
 .site-options-button:hover
 {
-  background-color: colour($dark-theme-colours, medium-grey );
+  background-color: colour($light-theme-colours, medium-grey);
 }

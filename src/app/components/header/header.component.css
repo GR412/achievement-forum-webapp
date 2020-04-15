@@ -6,15 +6,16 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  background: white;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li {
-  margin: 20px 20px 2px 20px;
+  margin: 20px 20px;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 button {
@@ -26,13 +27,13 @@ button {
 }
 
 header {
-  border-bottom: 2px solid #C62828;
-  background: #191919;
+  box-shadow: 0 1px 2px 0 lightgrey;
   min-height: 50px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  background: white;
 }
 
 .logo-container, .nav-container, .search-container, .auth-buttons-container, img, button {
@@ -42,37 +43,50 @@ header {
 
 .search-bar {
   border: none;
-  background-color: #313131;
+  background-color: #EEEEEE;
   border-radius: 5px 0 0 5px;
+  padding: 0 10px 0 10px;
   height: 30px;
   width: 400px;
 }
 
+.search-bar:focus {
+  border: 2px solid #304FFE;
+}
+
 .search-button {
   border-radius: 0 5px 5px 0;
-  background-color: #212121;
+  background-color: #E0E0E0;
   margin: 0;
 }
 
+.search-button:hover {
+  background-color: #BDBDBD;
+}
+
 .log-in-button {
-  background-color: #313131;
+  background-color: #EEEEEE;
 }
 
 .log-in-button:hover {
-  background-color: #414141;
+  background-color: #E0E0E0;
 }
 
 .sign-up-button {
   margin-left: 20px;
-  background-color: #0D47A1;
+  background-color: #304FFE;
 }
 
 .sign-up-button:hover {
-  background-color: #82B1FF;
+  background-color: #2962FF;
+}
+
+.site-options-button {
+  background-color: transparent;
 }
 
 .site-options-button:hover {
-  background-color: #313131;
+  background-color: #EEEEEE;
 }
 
 /*# sourceMappingURL=header.component.css.map */

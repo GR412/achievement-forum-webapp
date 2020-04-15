@@ -12,12 +12,13 @@ nav a
 
 nav a:hover
 {
-  color: colour($dark-theme-colours, medium-blue );
+  color: colour($light-theme-colours, medium-blue);
+  border-bottom: colour($light-theme-colours, medium-blue);
 }
 
 nav a.active
 {
-  color: colour($dark-theme-colours, medium-blue );
-  border-bottom: colour($dark-theme-colours, medium-blue );
+  color: colour($light-theme-colours, medium-blue);
+  border-bottom: colour($light-theme-colours, medium-blue);
 }
 
