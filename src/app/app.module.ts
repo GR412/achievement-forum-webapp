@@ -10,6 +10,7 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
 import { HeaderComponent } from './components/header/header.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { SiteOptionsDropdownComponent } from './components/site-options-dropdown/site-options-dropdown.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { SiteOptionsDropdownComponent } from './components/site-options-dropdown
     HeaderComponent,
     TopNavComponent,
     SiteOptionsDropdownComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

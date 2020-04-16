@@ -4,9 +4,9 @@
 
 $light-theme-colours:
 (
-  lighter-blue: #2962FF,
+  lighter-blue: lighten(#304FFE, 4%),
   medium-blue: #304FFE,
-  darker-blue: #0D47A1,
+  darker-blue: darken(#304FFE, 5%),
   lighter-grey: #414141,
   medium-grey: #EEEEEE,
   dark-grey: #E0E0E0,
@@ -44,7 +44,7 @@ body
 
 h1, h2, h3, h4, h5, h6, p, ul, li
 {
-  margin: 20px 20px; // Text should always have a left and right margin
+  margin: 20px 20px; // Body text should always have a left and right margin
 }
 
 a

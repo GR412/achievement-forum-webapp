@@ -1,76 +1,94 @@
 @import '../../../styles.scss';
 
+.spacer
+{
+  min-height: 50px; // This ensures that the main content doesn't go underneath the header when the user scrolls down the page
+}
+
 header
 {
   box-shadow: 0 1px 2px 0 lightgrey;
   min-height: 50px;
+  top: 0;
+  width: 100%;
+  position: fixed;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   background: white;
-}
 
-.logo-container, .nav-container, .search-container, .auth-buttons-container, img, button
-{
-  display: inline-block;
-  margin: 0 20px 0 20px;
-}
+  .search-bar
+  {
+    border: 2px solid transparent; // Stops the placeholder text from moving when focusing
+    background-color: colour($light-theme-colours, medium-grey);
+    border-radius: 5px 0 0 5px;
+    padding: 0 10px 0 10px;
+    height: 30px;
+    width: 400px;
+  }
 
-.search-bar
-{
-  border: none;
-  background-color: colour($light-theme-colours, medium-grey);
-  border-radius: 5px 0 0 5px;
-  padding: 0 10px 0 10px;
-  height: 30px;
-  width: 400px;
-}
+  .search-bar:focus
+  {
+    border: 2px solid colour($light-theme-colours, medium-blue); // todo this causes the search bar placeholder to move upon focus
+  }
 
-.search-bar:focus
-{
-  border: 2px solid colour($light-theme-colours, medium-blue);
-}
+  .search-button
+  {
+    border-radius: 0 5px 5px 0;
+    background-color: colour($light-theme-colours, dark-grey);
+    margin: 0;
+  }
 
-.search-button
-{
-  border-radius: 0 5px 5px 0;
-  background-color: colour($light-theme-colours, dark-grey);
-  margin: 0;
-}
+  .search-button:hover
+  {
+    background-color: colour($light-theme-colours, darker-grey);
+  }
 
-.search-button:hover
-{
-  background-color: colour($light-theme-colours, darker-grey);
-}
+  .header-left, .header-right
+  {
+    display: flex;
+    flex-flow: row wrap;
 
-.log-in-button
-{
-  background-color: colour($light-theme-colours, medium-grey);
-}
+    img, .nav-container
+    {
+      margin-left: 20px;
+    }
 
-.log-in-button:hover
-{
-  background-color: colour($light-theme-colours, dark-grey);
-}
+    .site-options-button, .auth-buttons-container
+    {
+      margin-right: 10px;
+    }
 
-.sign-up-button
-{
-  margin-left: 20px;
-  background-color: colour($light-theme-colours, medium-blue);
-}
+    .log-in-button
+    {
+      background-color: colour($light-theme-colours, medium-grey);
+    }
 
-.sign-up-button:hover
-{
-  background-color: colour($light-theme-colours, lighter-blue);
-}
+    .log-in-button:hover
+    {
+      background-color: colour($light-theme-colours, dark-grey);
+    }
 
-.site-options-button
-{
-  background-color: transparent;
-}
+    .sign-up-button
+    {
+      background-color: colour($light-theme-colours, medium-blue);
+      margin-left: 20px;
+    }
 
-.site-options-button:hover
-{
-  background-color: colour($light-theme-colours, medium-grey);
+    .sign-up-button:hover
+    {
+      background-color: colour($light-theme-colours, lighter-blue);
+    }
+
+    .site-options-button
+    {
+      background-color: transparent;
+    }
+
+    .site-options-button:hover
+    {
+      background-color: colour($light-theme-colours, medium-grey);
+    }
+  }
 }

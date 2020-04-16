@@ -26,18 +26,20 @@ button {
   cursor: pointer;
 }
 
-nav a {
-  padding: 0 15px 0 15px;
+footer {
+  min-height: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: #EEEEEE;
 }
-
-nav a:hover {
+footer .text-links a {
+  margin: 0 20px 0 20px;
+}
+footer .text-links a:hover {
   color: #304FFE;
   border-bottom: #304FFE;
 }
 
-nav a.active {
-  color: #304FFE;
-  border-bottom: #304FFE;
-}
-
-/*# sourceMappingURL=top-nav.component.css.map */
+/*# sourceMappingURL=footer.component.css.map */

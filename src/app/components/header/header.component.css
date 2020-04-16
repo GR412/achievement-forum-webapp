@@ -26,66 +26,68 @@ button {
   cursor: pointer;
 }
 
+.spacer {
+  min-height: 50px;
+}
+
 header {
   box-shadow: 0 1px 2px 0 lightgrey;
   min-height: 50px;
+  top: 0;
+  width: 100%;
+  position: fixed;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
   background: white;
 }
-
-.logo-container, .nav-container, .search-container, .auth-buttons-container, img, button {
-  display: inline-block;
-  margin: 0 20px 0 20px;
-}
-
-.search-bar {
-  border: none;
+header .search-bar {
+  border: 2px solid transparent;
   background-color: #EEEEEE;
   border-radius: 5px 0 0 5px;
   padding: 0 10px 0 10px;
   height: 30px;
   width: 400px;
 }
-
-.search-bar:focus {
+header .search-bar:focus {
   border: 2px solid #304FFE;
 }
-
-.search-button {
+header .search-button {
   border-radius: 0 5px 5px 0;
   background-color: #E0E0E0;
   margin: 0;
 }
-
-.search-button:hover {
+header .search-button:hover {
   background-color: #BDBDBD;
 }
-
-.log-in-button {
+header .header-left, header .header-right {
+  display: flex;
+  flex-flow: row wrap;
+}
+header .header-left img, header .header-left .nav-container, header .header-right img, header .header-right .nav-container {
+  margin-left: 20px;
+}
+header .header-left .site-options-button, header .header-left .auth-buttons-container, header .header-right .site-options-button, header .header-right .auth-buttons-container {
+  margin-right: 10px;
+}
+header .header-left .log-in-button, header .header-right .log-in-button {
   background-color: #EEEEEE;
 }
-
-.log-in-button:hover {
+header .header-left .log-in-button:hover, header .header-right .log-in-button:hover {
   background-color: #E0E0E0;
 }
-
-.sign-up-button {
-  margin-left: 20px;
+header .header-left .sign-up-button, header .header-right .sign-up-button {
   background-color: #304FFE;
+  margin-left: 20px;
 }
-
-.sign-up-button:hover {
-  background-color: #2962FF;
+header .header-left .sign-up-button:hover, header .header-right .sign-up-button:hover {
+  background-color: #4460fe;
 }
-
-.site-options-button {
+header .header-left .site-options-button, header .header-right .site-options-button {
   background-color: transparent;
 }
-
-.site-options-button:hover {
+header .header-left .site-options-button:hover, header .header-right .site-options-button:hover {
   background-color: #EEEEEE;
 }
 

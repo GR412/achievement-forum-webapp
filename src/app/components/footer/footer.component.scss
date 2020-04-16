@@ -1,0 +1,22 @@
+@import '../../../styles.scss';
+
+footer
+{
+  min-height: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background: colour($light-theme-colours, medium-grey);
+
+  .text-links a
+  {
+    margin: 0 20px 0 20px;
+  }
+
+  .text-links a:hover
+  {
+    color: colour($light-theme-colours, medium-blue);
+    border-bottom: colour($light-theme-colours, medium-blue);
+  }
+}
