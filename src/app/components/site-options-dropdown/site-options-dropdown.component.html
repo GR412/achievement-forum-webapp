@@ -1,44 +1,55 @@
 <div class="options-container">
-  <ul> <!-- hidden when not logged in -->
+
+  <ul class="logged-in-options">
 
     <li>
-      <img src="" alt="profile-icon">
-      <p>Profile</p>
+      <i class="fas fa-user-circle fa-lg"></i>&nbsp;
+      <label>Profile</label>
     </li>
 
     <li>
-      <img src="" alt="cog-icon">
-      <p>Account Settings</p>
+      <i class="fas fa-cog fa-lg"></i>&nbsp;
+      <label>Account Settings</label>
     </li>
 
     <li>
-      <img src="" alt="pencil-icon">
-      <p>Edit Profile</p>
+      <i class="fas fa-edit fa-lg"></i>&nbsp;
+      <label>Edit Profile</label>
     </li>
 
   </ul>
 
-  <ul>
+  <hr>
+
+  <ul class="always-showing-options">
 
     <li>
-      <img src="" alt="letter-icon">
-      <p>Language</p>
+      <i class="fas fa-globe fa-lg"></i>&nbsp;
+      <label>Language</label>
     </li>
 
     <li>
-      <img src="" alt="moon-icon">
-      <p>Dark Theme</p> <!-- hidden when light mode is activated -->
-      <img src="" alt="sun-icon">
-      <p>Light Theme</p> <!-- hidden when dark mode is activated -->
-      <label class="theme-toggle">
-        <input type="toggle">
-        <span class="toggle-shape"></span> <!-- default is light mode -->
+      <i class="fas fa-moon fa-lg"></i>&nbsp;
+      <label>Dark Theme</label>
+     <label class="button-toggle">
+        <input type="checkbox">
+        <span class="slider"></span> <!-- todo resize the button toggle -->
       </label>
     </li>
 
+
+
   </ul>
 
-  <img src="" alt="exit-arrow-icon">
-  <p>Log Out</p> <!-- hidden when logged out -->
+  <hr>
+
+  <ul class="logout">
+
+    <li>
+      <i class="fas fa-sign-out-alt fa-lg"></i>&nbsp;
+      <label>Log Out</label>
+    </li>
+
+  </ul>
 
 </div>

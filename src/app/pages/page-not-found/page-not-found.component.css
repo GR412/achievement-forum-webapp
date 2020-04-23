@@ -9,8 +9,15 @@ body {
   background: white;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li {
-  margin: 20px 20px;
+h1, h2, h3, h4, h5, h6, p {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -21,7 +28,6 @@ a {
 button {
   padding: 7px 12px 7px 12px;
   border-radius: 5px;
-  font-weight: bold;
   border: none;
   cursor: pointer;
 }

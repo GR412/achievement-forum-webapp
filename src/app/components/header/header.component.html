@@ -21,13 +21,15 @@
       <button class="sign-up-button" type="button">Sign Up</button>
     </div>
 
-    <button class="site-options-button" type="button"><i class="far fa-user fa-lg"></i></button>
+    <button class="site-options-button" type="button" (click)="toggleSiteOptions()"><i class="far fa-user fa-lg"></i></button>
   </div>                          <!-- hidden when logged in -->
   <!-- <img src="" alt="user-profile-icon"> --> <!-- hidden when logged out  -->
 
   <!-- <app-site-options-dropdown></app-site-options-dropdown> -->
 
 </header>
+
+<app-site-options-dropdown *ngIf="siteOptionsToggle"></app-site-options-dropdown>
 
 <div class="spacer">
   &nbsp;
