@@ -1,13 +1,10 @@
 @import '../../../styles.scss';
 
-nav
+nav a h4
 {
-
-}
-
-nav a
-{
-  padding: 0 15px 0 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
 }
 
 nav a:hover
@@ -19,6 +16,6 @@ nav a:hover
 nav a.active
 {
   color: colour($light-theme-colours, medium-blue);
-  border-bottom: colour($light-theme-colours, medium-blue);
+  border-bottom: colour($light-theme-colours, medium-blue); // todo not working for some reason
 }
 

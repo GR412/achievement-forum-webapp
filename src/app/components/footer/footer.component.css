@@ -1,17 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
 /* ========================= COLOURS ========================= */
 /* ========================= FUNCTIONS ========================= */
 body {
   overflow-y: scroll;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
   background: white;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
 }
 
 ul {
@@ -25,11 +25,22 @@ a {
   color: black;
 }
 
+hr {
+  color: lightgrey;
+  background-color: lightgrey;
+  height: 1px;
+  border-width: 0;
+}
+
 button {
   padding: 7px 12px 7px 12px;
   border-radius: 5px;
   border: none;
   cursor: pointer;
+}
+
+.fas, .far {
+  color: #424242;
 }
 
 footer {
@@ -40,12 +51,23 @@ footer {
   align-items: center;
   background: #EEEEEE;
 }
-footer .text-links a {
-  margin: 0 20px 0 20px;
+footer h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: inline-block;
+}
+footer i {
+  margin-left: 20px;
 }
 footer .text-links a:hover {
   color: #304FFE;
   border-bottom: #304FFE;
+}
+footer .fa-twitter {
+  color: #1C8CD2;
+}
+footer .fa-youtube {
+  color: #FF0000;
 }
 
 /*# sourceMappingURL=footer.component.css.map */

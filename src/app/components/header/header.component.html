@@ -17,19 +17,17 @@
 
   <div class="header-right">
     <div class="auth-buttons-container">
-      <button class="log-in-button" type="button">Log In</button>
-      <button class="sign-up-button" type="button">Sign Up</button>
+      <button class="log-in-button" type="button" (click)="showLogInModal()">Log In</button>
+      <button class="sign-up-button" type="button" (click)="showSignUpModal()">Sign Up</button>
     </div>
 
-    <button class="site-options-button" type="button" (click)="toggleSiteOptions()"><i class="far fa-user fa-lg"></i></button>
-  </div>                          <!-- hidden when logged in -->
-  <!-- <img src="" alt="user-profile-icon"> --> <!-- hidden when logged out  -->
-
-  <!-- <app-site-options-dropdown></app-site-options-dropdown> -->
+    <button class="site-options-button" type="button" (click)="toggleSiteOptions()"><i class="far fa-user fa-lg "></i></button>
+  </div>
 
 </header>
 
 <app-site-options-dropdown *ngIf="siteOptionsToggle"></app-site-options-dropdown>
+<app-log-in *ngIf="buttonClicked"></app-log-in>
 
 <div class="spacer">
   &nbsp;

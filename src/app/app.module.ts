@@ -11,6 +11,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { SiteOptionsDropdownComponent } from './components/site-options-dropdown/site-options-dropdown.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LogInComponent } from './components/modals/log-in/log-in.component';
+import { SignUpComponent } from './components/modals/sign-up/sign-up.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
 
 @NgModule({
   declarations: [
@@ -21,11 +25,15 @@ import { FooterComponent } from './components/footer/footer.component';
     TopNavComponent,
     SiteOptionsDropdownComponent,
     FooterComponent,
+    LogInComponent,
+    SignUpComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [AuthenticateService],
   bootstrap: [AppComponent]

@@ -7,7 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public siteOptionsToggle = false;
-  public toggleCount = 0;
+  public buttonClicked = false;
+  // public toggleCount = 0;
+  public LogInModal;
+  public signUpModal;
 
   constructor() { }
 
@@ -21,5 +24,16 @@ export class HeaderComponent implements OnInit {
    /* } else if (this.toggleCount === 2) {
     this.siteOptionsToggle = false;*/
  // }
+  }
+
+  showLogInModal() {
+    // document.querySelector('log-in-modal').style.
+    // document.getElementById('log-in-modal').style.display = 'block';
+    // modal.style.display = 'block';
+    // this.buttonClicked = !this.buttonClicked;
+  }
+
+  showSignUpModal() {
+
   }
 }

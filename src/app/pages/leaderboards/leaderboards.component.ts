@@ -3,10 +3,10 @@ import { AuthenticateService } from '../../authenticate.service';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  templateUrl: './leaderboards.component.html',
+  styleUrls: ['./leaderboards.component.scss']
 })
-export class LoginComponent implements OnInit {
+export class LeaderboardsComponent implements OnInit {
   public validationMessage: string;
   public usernameMessage: string;
   public passwordMessage: string;

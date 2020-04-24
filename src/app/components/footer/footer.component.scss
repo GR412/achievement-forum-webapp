@@ -9,14 +9,31 @@ footer
   align-items: center;
   background: colour($light-theme-colours, medium-grey);
 
-  .text-links a
+  h5
   {
-    margin: 0 20px 0 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+  }
+
+  i
+  {
+    margin-left: 20px;
   }
 
   .text-links a:hover
   {
     color: colour($light-theme-colours, medium-blue);
     border-bottom: colour($light-theme-colours, medium-blue);
+  }
+
+  .fa-twitter
+  {
+    color: colour($light-theme-colours, twitter-blue);
+  }
+
+  .fa-youtube
+  {
+    color: colour($light-theme-colours, youtube-red);
   }
 }

@@ -1,15 +1,9 @@
 @import '../../../styles.scss';
 
-.spacer
-{
-  min-height: 50px; // This ensures that the main content doesn't go underneath the header when the user scrolls down the page
-}
-
 header
 {
   box-shadow: 0 1px 2px 0 lightgrey;
   min-height: 50px;
-  top: 0;
   width: 100%;
   position: fixed;
   display: flex;
@@ -30,7 +24,7 @@ header
 
   .search-bar:focus
   {
-    border: 2px solid colour($light-theme-colours, medium-blue); // todo this causes the search bar placeholder to move upon focus
+    border: 2px solid colour($light-theme-colours, medium-blue);
   }
 
   .search-button
@@ -49,13 +43,14 @@ header
   {
     display: flex;
     flex-flow: row wrap;
+    align-items: center;
 
     img, .nav-container
     {
       margin-left: 20px;
     }
 
-    .site-options-button, .auth-buttons-container
+    .auth-buttons-container, .site-options-button
     {
       margin-right: 10px;
     }
@@ -91,4 +86,9 @@ header
       background-color: colour($light-theme-colours, dark-grey);
     }
   }
+}
+
+.spacer
+{
+  min-height: 50px; // This ensures that the main content doesn't go underneath the header when the user scrolls down the page
 }

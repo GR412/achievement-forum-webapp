@@ -58,7 +58,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: #ccc;
+      background-color: colour($light-theme-colours, dark-grey);
       transition: .4s;
       border-radius: 16px; //old value 34px;
     }

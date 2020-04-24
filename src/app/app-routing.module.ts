@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {LoginComponent} from './pages/login/login.component';
-import {AdminComponent} from './pages/admin/admin.component';
+import {LeaderboardsComponent} from './pages/leaderboards/leaderboards.component';
+import {TrackerComponent} from './pages/tracker/tracker.component';
 import {HomeComponent} from './pages/home/home.component';
 import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes  = [
   {path: '', pathMatch: 'full', redirectTo: '/home'},
-  {path: 'login', component: LoginComponent},
-  {path: 'admin', component: AdminComponent},
+  {path: 'leaderboards', component: LeaderboardsComponent},
+  {path: 'tracker', component: TrackerComponent},
   {path: 'home', component: HomeComponent},
   {path: '**', component: PageNotFoundComponent}]; // must always be at the bottom
 
@@ -18,4 +18,4 @@ const routes: Routes  = [
 })
 
 export  class AppRoutingModule {}
-export const routingComponents = [HomeComponent, AdminComponent, LoginComponent, PageNotFoundComponent];
+export const routingComponents = [HomeComponent, TrackerComponent, LeaderboardsComponent, PageNotFoundComponent];

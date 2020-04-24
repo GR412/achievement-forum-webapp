@@ -1,17 +1,17 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
 /* ========================= COLOURS ========================= */
 /* ========================= FUNCTIONS ========================= */
 body {
   overflow-y: scroll;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
   background: white;
 }
 
 h1, h2, h3, h4, h5, h6, p {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 20px;
 }
 
 ul {
@@ -25,6 +25,13 @@ a {
   color: black;
 }
 
+hr {
+  color: lightgrey;
+  background-color: lightgrey;
+  height: 1px;
+  border-width: 0;
+}
+
 button {
   padding: 7px 12px 7px 12px;
   border-radius: 5px;
@@ -32,14 +39,13 @@ button {
   cursor: pointer;
 }
 
-.spacer {
-  min-height: 50px;
+.fas, .far {
+  color: #424242;
 }
 
 header {
   box-shadow: 0 1px 2px 0 lightgrey;
   min-height: 50px;
-  top: 0;
   width: 100%;
   position: fixed;
   display: flex;
@@ -70,11 +76,12 @@ header .search-button:hover {
 header .header-left, header .header-right {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
 }
 header .header-left img, header .header-left .nav-container, header .header-right img, header .header-right .nav-container {
   margin-left: 20px;
 }
-header .header-left .site-options-button, header .header-left .auth-buttons-container, header .header-right .site-options-button, header .header-right .auth-buttons-container {
+header .header-left .auth-buttons-container, header .header-left .site-options-button, header .header-right .auth-buttons-container, header .header-right .site-options-button {
   margin-right: 10px;
 }
 header .header-left .log-in-button, header .header-right .log-in-button {
@@ -95,6 +102,10 @@ header .header-left .site-options-button, header .header-right .site-options-but
 }
 header .header-left .site-options-button:hover, header .header-right .site-options-button:hover {
   background-color: #E0E0E0;
+}
+
+.spacer {
+  min-height: 50px;
 }
 
 /*# sourceMappingURL=header.component.css.map */
