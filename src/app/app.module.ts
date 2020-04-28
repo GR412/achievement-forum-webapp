@@ -15,6 +15,10 @@ import { LogInComponent } from './components/modals/log-in/log-in.component';
 import { SignUpComponent } from './components/modals/sign-up/sign-up.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { ProfileSettingsComponent } from './pages/settings/profile/profile-settings.component';
+import { AccountSettingsComponent } from './pages/settings/account/account-settings.component';
+import { SecuritySettingsComponent } from './pages/settings/security/security-settings.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,10 @@ import { MaterialModule } from './material/material.module';
     FooterComponent,
     LogInComponent,
     SignUpComponent,
+    SettingsComponent,
+    ProfileSettingsComponent,
+    AccountSettingsComponent,
+    SecuritySettingsComponent,
   ],
   entryComponents: [LogInComponent],
   imports: [

@@ -1,0 +1,20 @@
+@import '../../../styles.scss';
+
+nav a h4
+{
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+nav a:hover
+{
+  color: colour($light-theme-colours, medium-blue);
+  border-bottom: colour($light-theme-colours, medium-blue);
+}
+
+nav a.active
+{
+  color: colour($light-theme-colours, medium-blue);
+  border-bottom: colour($light-theme-colours, medium-blue); // todo not working for some reason
+}
