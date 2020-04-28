@@ -28,7 +28,7 @@ $dark-theme-colours:
 
 /* ========================= FUNCTIONS ========================= */
 
-// Simplifies the use of the light and dark theme SASS maps by returning a map_get call
+// Simplifies the use of the light and dark theme SASS maps by returning a map_get call.
 @function colour ($theme, $colour-name)
 {
   @return map_get($theme, $colour-name);
@@ -80,8 +80,28 @@ button
   cursor: pointer;
 }
 
+input
+{
+  border: 2px solid transparent; // Stops input placeholder text from moving when focusing.
+  background-color: colour($light-theme-colours, medium-grey);
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+}
+
+input:focus
+{
+  border: 2px solid colour($light-theme-colours, medium-blue);
+}
+
+form
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
 .fas, .far
 {
-  color: colour($light-theme-colours, icons);
+  color: colour($light-theme-colours, icons); // Font awesome icon colours.
 }
 

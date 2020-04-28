@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog} from '@angular/material/dialog';
+import { LogInComponent } from '../modals/log-in/log-in.component';
+import { SignUpComponent } from '../modals/sign-up/sign-up.component';
 
 @Component({
   selector: 'app-header',
@@ -8,32 +11,21 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
   public siteOptionsToggle = false;
   public buttonClicked = false;
-  // public toggleCount = 0;
-  public LogInModal;
-  public signUpModal;
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
   }
 
   toggleSiteOptions() {
-
-   /* if (this.toggleCount === 1) {*/
     this.siteOptionsToggle = !this.siteOptionsToggle;
-   /* } else if (this.toggleCount === 2) {
-    this.siteOptionsToggle = false;*/
- // }
   }
 
   showLogInModal() {
-    // document.querySelector('log-in-modal').style.
-    // document.getElementById('log-in-modal').style.display = 'block';
-    // modal.style.display = 'block';
-    // this.buttonClicked = !this.buttonClicked;
+    this.dialog.open(LogInComponent);
   }
 
   showSignUpModal() {
-
+    this.dialog.open(SignUpComponent);
   }
 }

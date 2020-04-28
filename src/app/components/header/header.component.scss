@@ -12,19 +12,11 @@ header
   align-items: center;
   background: white;
 
-  .search-bar
+  input
   {
-    border: 2px solid transparent; // Stops the placeholder text from moving when focusing
-    background-color: colour($light-theme-colours, medium-grey);
     border-radius: 5px 0 0 5px;
-    padding: 0 10px 0 10px;
     height: 30px;
     width: 400px;
-  }
-
-  .search-bar:focus
-  {
-    border: 2px solid colour($light-theme-colours, medium-blue);
   }
 
   .search-button
@@ -69,6 +61,7 @@ header
     {
       background-color: colour($light-theme-colours, medium-blue);
       margin-left: 20px;
+      color: white;
     }
 
     .sign-up-button:hover

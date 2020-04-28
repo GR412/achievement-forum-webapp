@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle'; // todo sort these imports out
+import { MatDialogModule } from '@angular/material/dialog'; // todo sort these imports out
 
 
-const MaterialComponents = [MatSlideToggleModule];
+const MaterialComponents = [ MatDialogModule ];
 
 @NgModule({
   imports: [MaterialComponents],

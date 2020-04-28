@@ -39,6 +39,23 @@ button {
   cursor: pointer;
 }
 
+input {
+  border: 2px solid transparent;
+  background-color: #EEEEEE;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+}
+
+input:focus {
+  border: 2px solid #304FFE;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
 .fas, .far {
   color: #424242;
 }
@@ -54,16 +71,10 @@ header {
   align-items: center;
   background: white;
 }
-header .search-bar {
-  border: 2px solid transparent;
-  background-color: #EEEEEE;
+header input {
   border-radius: 5px 0 0 5px;
-  padding: 0 10px 0 10px;
   height: 30px;
   width: 400px;
-}
-header .search-bar:focus {
-  border: 2px solid #304FFE;
 }
 header .search-button {
   border-radius: 0 5px 5px 0;
@@ -93,6 +104,7 @@ header .header-left .log-in-button:hover, header .header-right .log-in-button:ho
 header .header-left .sign-up-button, header .header-right .sign-up-button {
   background-color: #304FFE;
   margin-left: 20px;
+  color: white;
 }
 header .header-left .sign-up-button:hover, header .header-right .sign-up-button:hover {
   background-color: #4460fe;

@@ -1,8 +1,10 @@
-<form id="log-in-modal"><!--(submit)="loginUser($event)"-->>
-  <input type="text" placeholder="Username" id="username">
-  <input type="password" placeholder="Password" id="password"> <!--{{usernameMessage}}-->
-  <!--{{passwordMessage}}-->
-  <input type="submit" placeholder="Submit">
-</form>
-
-
+<div class="log-in-modal">
+  <form><!--(submit)="loginUser($event)"-->
+    <label for="username">Username:</label>
+    <input class="username-input" type="text" id="username">
+    <label for="password">Password:</label>
+    <input class="password-input" type="password" id="password"> <!--{{usernameMessage}}-->
+    <!--{{passwordMessage}}-->
+    <button type="submit">Log In</button>
+  </form>
+</div>
