@@ -39,21 +39,39 @@ button {
   cursor: pointer;
 }
 
-input {
+.grey-button {
+  background-color: #EEEEEE;
+}
+
+.grey-button:hover {
+  background-color: #E0E0E0;
+}
+
+.blue-button {
+  background-color: #304FFE;
+  color: white;
+}
+
+.blue-button:hover {
+  background-color: #4460fe;
+}
+
+input, textarea {
+  font-family: inherit;
+  font-size: inherit;
   border: 2px solid transparent;
   background-color: #EEEEEE;
   border-radius: 5px;
   padding: 0 10px 0 10px;
 }
 
-input:focus {
+input:focus, textarea:focus {
   border: 2px solid #304FFE;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
 }
 
 .fas, .far {
@@ -95,19 +113,8 @@ header .header-left img, header .header-left .nav-container, header .header-righ
 header .header-left .auth-buttons-container, header .header-left .site-options-button, header .header-right .auth-buttons-container, header .header-right .site-options-button {
   margin-right: 10px;
 }
-header .header-left .log-in-button, header .header-right .log-in-button {
-  background-color: #EEEEEE;
-}
-header .header-left .log-in-button:hover, header .header-right .log-in-button:hover {
-  background-color: #E0E0E0;
-}
-header .header-left .sign-up-button, header .header-right .sign-up-button {
-  background-color: #304FFE;
+header .header-left .auth-buttons-container .blue-button, header .header-right .auth-buttons-container .blue-button {
   margin-left: 20px;
-  color: white;
-}
-header .header-left .sign-up-button:hover, header .header-right .sign-up-button:hover {
-  background-color: #4460fe;
 }
 header .header-left .site-options-button, header .header-right .site-options-button {
   background-color: transparent;
@@ -116,7 +123,7 @@ header .header-left .site-options-button:hover, header .header-right .site-optio
   background-color: #E0E0E0;
 }
 
-.spacer {
+.header-spacer {
   min-height: 50px;
 }
 

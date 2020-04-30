@@ -80,15 +80,38 @@ button
   cursor: pointer;
 }
 
-input
+.grey-button
 {
+  background-color: colour($light-theme-colours, medium-grey);
+}
+
+.grey-button:hover
+{
+  background-color: colour($light-theme-colours, dark-grey);
+}
+
+.blue-button
+{
+  background-color: colour($light-theme-colours, medium-blue);
+  color: white;
+}
+
+.blue-button:hover
+{
+  background-color: colour($light-theme-colours, lighter-blue);
+}
+
+input, textarea
+{
+  font-family: inherit;
+  font-size: inherit;
   border: 2px solid transparent; // Stops input placeholder text from moving when focusing.
   background-color: colour($light-theme-colours, medium-grey);
   border-radius: 5px;
   padding: 0 10px 0 10px;
 }
 
-input:focus
+input:focus, textarea:focus
 {
   border: 2px solid colour($light-theme-colours, medium-blue);
 }
@@ -97,7 +120,6 @@ form
 {
   display: flex;
   flex-direction: column;
-  margin-top: 50px;
 }
 
 .fas, .far

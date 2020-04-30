@@ -15,14 +15,3 @@ input
 {
   margin-bottom: 30px;
 }
-
-button
-{
-  background-color: colour($light-theme-colours, medium-blue);
-  color: white;
-}
-
-button:hover
-{
-  background-color: colour($light-theme-colours, lighter-blue);
-}

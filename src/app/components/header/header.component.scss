@@ -47,26 +47,9 @@ header
       margin-right: 10px;
     }
 
-    .log-in-button
+    .auth-buttons-container .blue-button
     {
-      background-color: colour($light-theme-colours, medium-grey);
-    }
-
-    .log-in-button:hover
-    {
-      background-color: colour($light-theme-colours, dark-grey);
-    }
-
-    .sign-up-button
-    {
-      background-color: colour($light-theme-colours, medium-blue);
       margin-left: 20px;
-      color: white;
-    }
-
-    .sign-up-button:hover
-    {
-      background-color: colour($light-theme-colours, lighter-blue);
     }
 
     .site-options-button
@@ -81,7 +64,7 @@ header
   }
 }
 
-.spacer
+.header-spacer
 {
   min-height: 50px; // This ensures that the main content doesn't go underneath the header when the user scrolls down the page
 }

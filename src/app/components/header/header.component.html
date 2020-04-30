@@ -17,11 +17,11 @@
 
   <div class="header-right">
     <div class="auth-buttons-container">
-      <button class="log-in-button" type="button" (click)="showLogInModal()">Log In</button>
-      <button class="sign-up-button" type="button" (click)="showSignUpModal()">Sign Up</button>
+      <button class="grey-button" type="button" (click)="showLogInModal()">Log In</button>
+      <button class="blue-button" type="button" (click)="showSignUpModal()">Sign Up</button>
     </div>
 
-    <button class="site-options-button" type="button" (click)="toggleSiteOptions()"><i class="far fa-user fa-lg "></i></button>
+    <button class="site-options-button" type="button" (click)="toggleSiteOptions()"><i class="far fa-user fa-lg"></i></button>
   </div>
 
 </header>
@@ -29,4 +29,4 @@
 <app-site-options-dropdown *ngIf="siteOptionsToggle"></app-site-options-dropdown>
 <app-log-in *ngIf="buttonClicked"></app-log-in>
 
-<div class="spacer"></div>
+<div class="header-spacer"></div>
