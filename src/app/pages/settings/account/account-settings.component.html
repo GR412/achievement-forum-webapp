@@ -1,1 +1,27 @@
-<p>account works!</p>
+<div class="account-settings">
+    <h3>Update Account</h3>
+    <hr>
+    <div class="change-username">
+      <div class="change-username-text">
+        <p>Current Username:</p>
+        <p><i>Username Placeholder</i></p>
+      </div>
+      <button class="blue-button" type="button" (click)="showChangeUsernameModal()">Change Username</button>
+    </div>
+
+    <div class="change-email">
+      <div class="change-email-text">
+        <p>Current Email:</p>
+        <p><i>Email Placeholder</i></p>
+      </div>
+      <button class="blue-button" type="button" (click)="showChangeEmailModal()">Change Email</button>
+    </div>
+
+    <h3>Delete Account</h3>
+    <hr>
+    <div class="delete-account">
+      <p>Permanently delete your account</p>
+      <button class="red-button" type="button" (click)="showDeleteAccountModal()">Delete Account</button>
+    </div>
+</div>
+

@@ -19,7 +19,10 @@ import { SettingsComponent } from './pages/settings/settings.component';
 import { ProfileSettingsComponent } from './pages/settings/profile/profile-settings.component';
 import { AccountSettingsComponent } from './pages/settings/account/account-settings.component';
 import { SecuritySettingsComponent } from './pages/settings/security/security-settings.component';
-
+import { ChangeUsernameComponent } from './components/modals/change-username/change-username.component';
+import { ChangeEmailComponent } from './components/modals/change-email/change-email.component';
+import { ChangePasswordComponent } from './components/modals/change-password/change-password.component';
+import { DeleteAccountComponent } from './components/modals/delete-account/delete-account.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +38,10 @@ import { SecuritySettingsComponent } from './pages/settings/security/security-se
     ProfileSettingsComponent,
     AccountSettingsComponent,
     SecuritySettingsComponent,
+    ChangeUsernameComponent,
+    ChangeEmailComponent,
+    ChangePasswordComponent,
+    DeleteAccountComponent
   ],
   entryComponents: [LogInComponent],
   imports: [

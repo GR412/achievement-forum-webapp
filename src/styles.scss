@@ -5,6 +5,8 @@ $light-theme-colours:
   lighter-blue: lighten(#304FFE, 4%),
   medium-blue: #304FFE,
   darker-blue: darken(#304FFE, 5%),
+  lighter-red: #E53935,
+  darker-red: #D32F2F,
   lighter-grey: #414141,
   medium-grey: #EEEEEE,
   dark-grey: #E0E0E0,
@@ -37,7 +39,6 @@ $dark-theme-colours:
 body
 {
   overflow-y: scroll;
-  background: white;
 }
 
 h1, h2, h3, h4, h5, h6, p
@@ -80,7 +81,7 @@ button
   cursor: pointer;
 }
 
-.grey-button
+.grey-button // TODO SEE IF THESE DIFFERENT BUTTON COLOURS CAN BE PUT INTO A FUNCTION
 {
   background-color: colour($light-theme-colours, medium-grey);
 }
@@ -99,6 +100,17 @@ button
 .blue-button:hover
 {
   background-color: colour($light-theme-colours, lighter-blue);
+}
+
+.red-button
+{
+  background-color: colour($light-theme-colours, lighter-red);
+  color: white;
+}
+
+.red-button:hover
+{
+  background-color: colour($light-theme-colours, darker-red);
 }
 
 input, textarea

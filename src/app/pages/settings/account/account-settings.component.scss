@@ -1,0 +1,36 @@
+@import '../../../../styles.scss';
+
+.account-settings
+{
+  margin-bottom: 20px;
+  max-width: 540px;
+}
+
+.change-username, .change-email, .delete-account, button
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.change-username, button
+{
+  margin-bottom: 20px;
+}
+
+h3, p
+{
+  margin-bottom: 0;
+}
+
+hr
+{
+  width: 520px;
+  margin-left: 20px;
+}
+
+h4
+{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
