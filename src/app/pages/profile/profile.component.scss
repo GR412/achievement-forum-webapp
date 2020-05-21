@@ -1,0 +1,113 @@
+@import '../../../styles.scss';
+
+main
+{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: $medium-space;
+}
+
+h4
+{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/* ========================= SEPARATE BOXES ========================= */
+
+.profile-overview, .groups, .achievements, .action img
+{
+  border: 1px solid lightgrey;
+}
+
+.profile-overview, .groups, .achievements
+{
+  margin-top: $medium-space;
+}
+
+/* ========================= LEFT SECTION ========================= */
+
+.left-section
+{
+  width: 400px;
+}
+
+/* ========================= ACTION SECTION ========================= */
+
+.action
+{
+  display:flex;
+  flex-direction: row;
+}
+
+img
+{
+  margin-top: $medium-space;
+  margin-left: $medium-space;
+}
+
+.action-right-section
+{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.action-buttons
+{
+  margin-left: $medium-space;
+  margin-right: $medium-space;
+}
+
+.action-buttons button
+{
+  margin-right: $small-space;
+}
+
+/* ========================= ABOUT/WEBSITE-LINK SECTION ========================= */
+
+.about
+{
+  margin-top: $medium-space;
+}
+
+.website-link
+{
+  margin-left: $medium-space;
+  margin-bottom:$small-space;
+}
+
+.website-link a
+{
+  margin-left: $small-space;
+  color: colour($light-theme-colours, medium-blue);
+}
+
+/* ========================= STATS SECTION ========================= */
+
+.points-joined, .following-followers
+{
+  display:flex;
+  flex-direction: row;
+  font-weight: bold;
+}
+
+.points
+{
+  margin-right: 50px;
+}
+
+.following
+{
+  margin-right: 30px;
+}
+
+/* ========================= RIGHT SECTION ========================= */
+
+nav a h4
+{
+  display: inline-block;
+  margin-top: $medium-space;
+}
+

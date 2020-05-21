@@ -23,6 +23,7 @@ import { ChangeUsernameComponent } from './components/modals/change-username/cha
 import { ChangeEmailComponent } from './components/modals/change-email/change-email.component';
 import { ChangePasswordComponent } from './components/modals/change-password/change-password.component';
 import { DeleteAccountComponent } from './components/modals/delete-account/delete-account.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +42,8 @@ import { DeleteAccountComponent } from './components/modals/delete-account/delet
     ChangeUsernameComponent,
     ChangeEmailComponent,
     ChangePasswordComponent,
-    DeleteAccountComponent
+    DeleteAccountComponent,
+    ProfileComponent
   ],
   entryComponents: [LogInComponent],
   imports: [

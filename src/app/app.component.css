@@ -1,10 +1,11 @@
 /* ========================= COLOURS ========================= */
+/* ========================== SPACING ========================== */
 /* ========================= FUNCTIONS ========================= */
 body {
   overflow-y: scroll;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, strong {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -82,7 +83,7 @@ form {
   flex-direction: column;
 }
 
-.fas, .far {
+.fas, .far, .fa-caret-down {
   color: #424242;
 }
 
@@ -90,7 +91,7 @@ form {
   display: flex;
   justify-content: center;
   margin: auto;
-  width: 75%;
+  width: 85%;
 }
 
 /*# sourceMappingURL=app.component.css.map */

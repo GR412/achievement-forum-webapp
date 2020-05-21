@@ -1,0 +1,81 @@
+<main>
+  <div class="left-section">
+    <div class="profile-overview">
+
+      <div class="action">
+        <img src="assets/images/GR412 Logo.png" alt="profile picture" height="100px" width="100px">
+        <div class="action-right-section">
+        <h3>Placeholder Name</h3>
+          <div class="action-buttons">
+            <button class="blue-button" type="submit">Follow</button>
+            <button class="blue-button" type="submit">Message</button>
+            <button class="blue-button" type="submit"><i class="fas fa-caret-down"></i></button> <!--TODO DROP DOWN LIST OF MUTE, BLOCK AND REPORT HERE-->
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+          Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+          natoque penatibus et magnis dis parturient montes, nascetur
+          ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+          eu, pretium quis, sem. Nulla consequat massa quis enim.
+        </p>
+        <div class="website-link">
+          <i class="fas fa-link"></i><a href="https://www.twitch.tv/sneakyshrike" target="_blank">https://www.twitch.tv/sneakyshrike</a>
+        </div>
+      </div>
+
+      <div class="points-joined">
+        <div class="points">
+          <h4>Points</h4>
+          <p>94,436</p>
+        </div>
+        <div class="joined">
+          <h4>Joined</h4>
+          <p>April 27, 2020</p>
+        </div>
+      </div>
+
+      <div class="following-followers">
+        <div class="following">
+          <h4>Following</h4>
+          <p>478</p>
+        </div>
+        <div class="followers">
+          <h4>Followers</h4>
+          <p>27,990</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="groups">
+      <h3>Member of these groups</h3>
+    </div>
+
+    <div class="achievements">
+      <h3>Achievements</h3>
+    </div>
+  </div>
+
+     <div class="right-section">
+       <nav>
+         <a routerLink="Posts" routerLinkActive="active"><h4>Posts</h4></a>
+         <a routerLink="Comments" routerLinkActive="active"><h4>Comments</h4></a>
+         <a routerLink="Liked" routerLinkActive="active"><h4>Liked</h4></a>
+         <a routerLink="Favourited" routerLinkActive="active"><h4>Favourited</h4></a>
+       </nav>
+       <hr>
+       <router-outlet></router-outlet>
+     </div>
+</main>
+
+
+
+
+
+
+
+
+

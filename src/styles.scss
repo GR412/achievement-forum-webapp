@@ -28,6 +28,12 @@ $dark-theme-colours:
   text-white: white
 );
 
+/* ========================== SPACING ========================== */
+
+$large-space: 30px;
+$medium-space: 20px;
+$small-space: 10px;
+
 /* ========================= FUNCTIONS ========================= */
 
 // Simplifies the use of the light and dark theme SASS maps by returning a map_get call.
@@ -41,15 +47,15 @@ body
   overflow-y: scroll;
 }
 
-h1, h2, h3, h4, h5, h6, p
+h1, h2, h3, h4, h5, h6, p, strong
 {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: $medium-space;
+  margin-right: $medium-space;
 }
 
 h1, h2, h3, h4, h5, h6
 {
-  margin-top: 20px;
+  margin-top: $medium-space;
 }
 
 ul
@@ -134,7 +140,7 @@ form
   flex-direction: column;
 }
 
-.fas, .far
+.fas, .far, .fa-caret-down
 {
   color: colour($light-theme-colours, icons); // Font awesome icon colours.
 }

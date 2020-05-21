@@ -3,17 +3,26 @@ import { Routes, RouterModule } from '@angular/router';
 import { LeaderboardsComponent } from './pages/leaderboards/leaderboards.component';
 import { TrackerComponent } from './pages/tracker/tracker.component';
 import { HomeComponent } from './pages/home/home.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { ProfileSettingsComponent } from './pages/settings/profile/profile-settings.component';
 import { AccountSettingsComponent } from './pages/settings/account/account-settings.component';
 import { SecuritySettingsComponent } from './pages/settings/security/security-settings.component';
+import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/home'},
   {path: 'leaderboards', component: LeaderboardsComponent},
   {path: 'tracker', component: TrackerComponent},
   {path: 'home', component: HomeComponent},
+  {path: 'profile', component: ProfileComponent,
+    children:
+      [
+        {path: '', pathMatch: 'full', redirectTo: 'posts'}, // Set the default settings route to be the child profile route
+        {path: 'profile', component: ProfileSettingsComponent},
+        {path: 'account', component: AccountSettingsComponent},
+        {path: 'security', component: SecuritySettingsComponent}
+      ]},
   {path: 'settings', component: SettingsComponent,
     children:
       [

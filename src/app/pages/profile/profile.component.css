@@ -87,47 +87,92 @@ form {
   color: #424242;
 }
 
-.profile-settings {
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   margin-bottom: 20px;
-  max-width: 540px;
 }
 
-h3 {
+h4 {
   margin-bottom: 0;
+  margin-top: 0;
 }
 
-hr {
-  width: 520px;
+/* ========================= SEPARATE BOXES ========================= */
+.profile-overview, .groups, .achievements, .action img {
+  border: 1px solid lightgrey;
+}
+
+.profile-overview, .groups, .achievements {
+  margin-top: 20px;
+}
+
+/* ========================= LEFT SECTION ========================= */
+.left-section {
+  width: 400px;
+}
+
+/* ========================= ACTION SECTION ========================= */
+.action {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  margin-top: 20px;
   margin-left: 20px;
 }
 
-h4, .profile-picture-text {
-  margin-top: 10px;
-  margin-bottom: 0;
+.action-right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-input, textarea {
-  height: 30px;
-  width: 500px;
+.action-buttons {
   margin-left: 20px;
   margin-right: 20px;
 }
 
-textarea {
-  height: 100px;
+.action-buttons button {
+  margin-right: 10px;
 }
 
-.profile-picture-text {
+/* ========================= ABOUT/WEBSITE-LINK SECTION ========================= */
+.about {
+  margin-top: 20px;
+}
+
+.website-link {
+  margin-left: 20px;
   margin-bottom: 10px;
 }
 
-.profile-picture-uploader {
-  margin-bottom: 20px;
+.website-link a {
+  margin-left: 10px;
+  color: #304FFE;
 }
 
-button {
-  margin: auto;
-  margin-left: 20px;
+/* ========================= STATS SECTION ========================= */
+.points-joined, .following-followers {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
 }
 
-/*# sourceMappingURL=profile-settings.component.css.map */
+.points {
+  margin-right: 50px;
+}
+
+.following {
+  margin-right: 30px;
+}
+
+/* ========================= RIGHT SECTION ========================= */
+nav a h4 {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=profile.component.css.map */
