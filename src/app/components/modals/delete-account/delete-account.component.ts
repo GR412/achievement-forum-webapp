@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-delete-account',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DeleteAccountComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Form: FormBuilder) { }
+
+  deleteAccountForm = this.Form.group({
+    email: [''],
+    password: [''],
+    typeDelete: ['']
+  });
 
   ngOnInit(): void {
   }

@@ -1,15 +1,15 @@
 <div class="delete-account-modal">
   <p>Deleting your account is permanent and <br> irreversible and will not be able to be recovered!</p>
 
-  <form><!--(submit)="loginUser($event)"-->
+  <form [formGroup]="deleteAccountForm"><!--(submit)="loginUser($event)"-->
     <label for="account-email">Account Email:</label>
-    <input class="account-email-input" type="email" id="account-email">
+    <input formControlName="email" class="account-email-input" type="email" id="account-email">
 
     <label for="account-password">Account Password:</label>
-    <input class="account-password-input" type="password" id="account-password">
+    <input formControlName="password" class="account-password-input" type="password" id="account-password">
 
     <label for="type-delete">Type <strong>delete</strong> into the input:</label>
-    <input class="type-delete-input" type="password" id="type-delete">
+    <input formControlName="typeDelete" class="type-delete-input" type="password" id="type-delete">
 
     <button class="red-button" type="submit">Delete Account</button> <!-- TODO BUTTON SHOULD BE DISABLED UNTIL EMAIL, PASSWORD AND DELETE IS TYPED CORRECTLY  -->
   </form>

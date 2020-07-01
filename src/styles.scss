@@ -144,3 +144,8 @@ form
 {
   color: colour($light-theme-colours, icons); // Font awesome icon colours.
 }
+
+.form-validation-errors
+{
+    border: 2px solid colour($light-theme-colours, lighter-red);
+}

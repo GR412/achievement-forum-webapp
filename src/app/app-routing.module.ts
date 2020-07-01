@@ -1,14 +1,14 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { LeaderboardsComponent } from './pages/leaderboards/leaderboards.component';
-import { TrackerComponent } from './pages/tracker/tracker.component';
-import { HomeComponent } from './pages/home/home.component';
-import { ProfileComponent } from './pages/profile/profile.component';
-import { SettingsComponent } from './pages/settings/settings.component';
-import { ProfileSettingsComponent } from './pages/settings/profile/profile-settings.component';
-import { AccountSettingsComponent } from './pages/settings/account/account-settings.component';
-import { SecuritySettingsComponent } from './pages/settings/security/security-settings.component';
-import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {LeaderboardsComponent} from './pages/leaderboards/leaderboards.component';
+import {TrackerComponent} from './pages/tracker/tracker.component';
+import {HomeComponent} from './pages/home/home.component';
+import {ProfileComponent} from './pages/profile/profile.component';
+import {SettingsComponent} from './pages/settings/settings.component';
+import {ProfileSettingsComponent} from './pages/settings/profile/profile-settings.component';
+import {AccountSettingsComponent} from './pages/settings/account/account-settings.component';
+import {SecuritySettingsComponent} from './pages/settings/security/security-settings.component';
+import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: '/home'},

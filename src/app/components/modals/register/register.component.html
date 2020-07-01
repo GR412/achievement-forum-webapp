@@ -1,0 +1,21 @@
+<div class="sign-up-modal">
+  <form [formGroup]="RegisterForm" (ngSubmit)="onRegisterSubmit()"><!--(submit)="loginUser($event)"-->
+    <label for="email">Email:</label>
+    <input [class.form-validation-errors]="email.invalid && email.touched" formControlName="email" class="email-input" type="email" id="email">
+    <div *ngif="email.invalid && email.touched">
+      <p *ngif="email.errors ?. required">Email is required</p>
+      <p *ngif="email.errors ?. minlength">Email must have at least 3 characters</p>
+    </div>
+
+    <label for="username">Username:</label>
+    <input formControlName="username" class="username-input" type="text" id="username">
+
+    <label for="password">Password:</label>
+    <input formControlName="password" class="password-input" type="password" id="password">
+
+    <label for="password">Password Confirm:</label>
+    <input formControlName="passwordConfirm" class="password-confirm-input" type="password" id="password-confirm">
+
+    <button class="blue-button" type="submit">Sign Up</button>
+  </form>
+</div>

@@ -87,6 +87,10 @@ form {
   color: #424242;
 }
 
+.form-validation-errors {
+  border: 2px solid #E53935;
+}
+
 input {
   height: 20px;
   width: 300px;
@@ -100,4 +104,4 @@ input {
   margin-bottom: 30px;
 }
 
-/*# sourceMappingURL=sign-up.component.css.map */
+/*# sourceMappingURL=register.component.css.map */

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-profile',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileSettingsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Form: FormBuilder) { }
+
+  test = this.Form.group({
+    displayName: [''],
+    bio: [''],
+    avatar: ['']
+  });
 
   ngOnInit(): void {
   }

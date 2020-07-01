@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FormBuilder} from '@angular/forms';
 
 @Component({
   selector: 'app-change-username',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChangeUsernameComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Form: FormBuilder) { }
+
+  changeUserNameForm = this.Form.group({
+    newUsername: [''],
+    password: [''],
+  });
 
   ngOnInit(): void {
   }

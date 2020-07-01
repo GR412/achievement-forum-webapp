@@ -1,6 +1,8 @@
 <main>
   <h3>Home</h3>
-
+  <div *ngFor="let colourElement of colours; index as i">
+    {{i + " " + colourElement}}
+  </div>
   <p>Home Page Content</p>
   <p>Home Page Content</p>
   <p>Home Page Content</p>

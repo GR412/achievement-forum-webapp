@@ -4,7 +4,7 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
-import { AuthenticateService } from './authenticate.service';
+import { RegisterService } from './services/register.service';
 import { HttpClientModule } from '@angular/common/http';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -12,7 +12,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
 import { SiteOptionsDropdownComponent } from './components/site-options-dropdown/site-options-dropdown.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LogInComponent } from './components/modals/log-in/log-in.component';
-import { SignUpComponent } from './components/modals/sign-up/sign-up.component';
+import { RegisterComponent } from './components/modals/register/register.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { SettingsComponent } from './pages/settings/settings.component';
@@ -24,6 +24,8 @@ import { ChangeEmailComponent } from './components/modals/change-email/change-em
 import { ChangePasswordComponent } from './components/modals/change-password/change-password.component';
 import { DeleteAccountComponent } from './components/modals/delete-account/delete-account.component';
 import { ProfileComponent } from './pages/profile/profile.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +36,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
     SiteOptionsDropdownComponent,
     FooterComponent,
     LogInComponent,
-    SignUpComponent,
+    RegisterComponent,
     SettingsComponent,
     ProfileSettingsComponent,
     AccountSettingsComponent,
@@ -52,8 +54,9 @@ import { ProfileComponent } from './pages/profile/profile.component';
     HttpClientModule,
     BrowserAnimationsModule,
     MaterialModule,
+    ReactiveFormsModule
   ],
-  providers: [AuthenticateService],
+  providers: [RegisterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

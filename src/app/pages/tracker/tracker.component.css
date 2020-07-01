@@ -87,4 +87,8 @@ form {
   color: #424242;
 }
 
+.form-validation-errors {
+  border: 2px solid #E53935;
+}
+
 /*# sourceMappingURL=tracker.component.css.map */

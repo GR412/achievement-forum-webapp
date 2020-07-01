@@ -87,6 +87,10 @@ form {
   color: #424242;
 }
 
+.form-validation-errors {
+  border: 2px solid #E53935;
+}
+
 nav a h4 {
   margin-top: 0;
   margin-bottom: 0;

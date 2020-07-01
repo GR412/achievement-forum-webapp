@@ -1,15 +1,15 @@
 <div class="change-email-modal">
   <p>Current Email: <i>Placeholder</i></p>
 
-  <form><!--(submit)="loginUser($event)"-->
+  <form [formGroup]="changeEmailForm">
     <label for="new-email">New Email:</label>
-    <input class="new-email-input" type="email" id="new-email">
+    <input formControlName="newEmail" class="new-email-input" type="email" id="new-email">
 
     <label for="new-email-confirm">New Email Confirm:</label>
-    <input class="new-email-confirm-input" type="email" id="new-email-confirm">
+    <input formControlName="newEmailConfirm" class="new-email-confirm-input" type="email" id="new-email-confirm">
 
     <label for="password">Password:</label>
-    <input class="password-input" type="password" id="password">
+    <input formControlName="password" class="password-input" type="password" id="password">
 
     <button class="blue-button" type="submit">Change Email</button> <!-- TODO BUTTON SHOULD BE DISABLED UNTIL EMAILS MATCH AND PASSWORD IS CORRECT -->
   </form>

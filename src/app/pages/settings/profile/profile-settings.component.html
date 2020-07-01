@@ -1,19 +1,19 @@
 <div class="profile-settings">
-  <form><!--(submit)="loginUser($event)"-->
+  <form [formGroup]="test"><!--(submit)="loginUser($event)"-->
 
       <h3>Profile Information</h3>
       <hr>
       <h4>Display Name:</h4>
       <p>Change your profile display name, this is separate to your account username.</p>
-      <input class="email-input" type="text">
+      <input formControlName="displayName" type="text">
       <h4>Bio:</h4>
       <p>Give a brief description about yourself</p>
-      <textarea class="username-input"></textarea> <!-- TODO GIVE CURSOR A TOP MARGIN IN THE TEXTAREA -->
+      <textarea formControlName="bio"></textarea> <!-- TODO GIVE CURSOR A TOP MARGIN IN THE TEXTAREA -->
 
       <h3>Profile Avatar</h3>
       <hr>
       <p class="profile-picture-text">Upload a profile picture:</p>
-      <input class="profile-picture-uploader" type="file"> <!-- TODO IMAGE UPLOADER NEEDS STYLING -->
+      <input formControlName="avatar" class="profile-picture-uploader" type="file"> <!-- TODO IMAGE UPLOADER NEEDS STYLING -->
 
       <!--<h2>Profile Visibility</h2>
       <hr>
